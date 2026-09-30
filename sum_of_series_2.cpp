@@ -1,19 +1,19 @@
-//0,1,1,2,3,5,8... upto n terms. w.c.p  to display the given sequence //
+// 1+2+4+7+11 upto n terms. w.c.p to calculate sum of given series //
 # include<stdio.h>
-int main();
+int main()
 {
 	int n;
-	int a=1, b=1;
-	int sum=0;
-	scanf("%d\t, &n");
-	int i=1;
+	int term = 1;
+	int sum = 0;
+	int i = 1;
+	printf("\n enter the integer :");
+	scanf("%d", &n);
 	while(i<=n)
 	{
-		sum=a+b;
-		printf("%d\t", sum);
-		a=b;
-		b=sum;
+		sum += term;
+		term += i;
 		i++;
 	}
+	printf("\n the sum of this series will be : %d", sum);
 	return 0;
 }
