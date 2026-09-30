@@ -3,17 +3,17 @@
 int main()
 {
 	int n;
-	int i = 1;
-	int sum = 0;
-	int term = 2;
-	printf("\n enter the value of n:");
+	int i=1;
+	int sum=0;
+	int term=2;
+	printf("\n enter the value of n :");
 	scanf("%d", &n);
 	while(i<=n)
 	{
-		sum+=term;
-		term+=3;
+		sum += term;
+		term += 3;
 		i++;
 	}
-	printf("\n the sum is : %d", sum);
+	printf("\n the sum will be : %d", sum);
 	return 0;
 }
